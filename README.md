@@ -5,10 +5,11 @@ Nodejs https://nodejs.org/en/download/
 
 # Rakenduse tegemine
 
-## Installi express ja application generator tool
+## Installi express, application generator tool ja nodemon
 ```
 npm install express -g
 npm install express-generator -g
+npm install nodemon -g
 ```
 
 ## Loo express app nimega todo, mis kasutab pug view enginit
@@ -24,6 +25,11 @@ npm install
 ## Rakenduse käivitamine
 ```
 npm start
+```
+
+## Rakenduse käivitamine nodemoniga
+```
+nodemon bin/www
 ```
 
 # Todo tegemine
