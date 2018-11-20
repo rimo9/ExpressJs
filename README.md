@@ -1,34 +1,34 @@
-#ExpressJs ToDo App
+# ExpressJs ToDo App
 
-##Vaja installida:
+## Vaja installida:
 Nodejs https://nodejs.org/en/download/
 
-#Rakenduse tegemine
+# Rakenduse tegemine
 
-##Installi express ja application generator tool
+## Installi express ja application generator tool
 ```
 npm install express -g
 npm install express-generator -g
 ```
 
-##Loo express app nimega todo, mis kasutab pug view enginit
+## Loo express app nimega todo, mis kasutab pug view enginit
 ```
 express --view=pug todo
 ```
 
-##Mine todo kausta, installi dependancies
+## Mine todo kausta, installi dependancies
 ```
 npm install
 ```
 
-##Rakenduse käivitamine
+## Rakenduse käivitamine
 ```
 npm start
 ```
 
-#Todo tegemine
+# Todo tegemine
 
-##views/index.pug failis peale "block contenti" pane veebis kuvatav kood
+## views/index.pug failis peale "block contenti" pane veebis kuvatav kood
 ```
 h1 ToDo App
 h2 Add New Task
@@ -56,18 +56,18 @@ each item in complete
 	li= item
 ```
 
-##routes/index.js failis loo kaks uuta variablet
+## routes/index.js failis loo kaks uuta variablet
 ```
 var task = [];
 var complete = [];
 ```
 
-##GET home page funktsiooni sees asenda res.render
+## GET home page funktsiooni sees asenda res.render
 ```
 res.render('index', { title: 'Express', task: task, complete: complete });
 ```
 
-##Peale GET home page funktsiooni lisa funktsioonid uute taskide lisamiseks ja vanade eemaldamiseks
+## Peale GET home page funktsiooni lisa funktsioonid uute taskide lisamiseks ja vanade eemaldamiseks
 ```
 /* POST newtask */
 router.post("/addtask", function(req, res) {
