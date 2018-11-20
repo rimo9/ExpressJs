@@ -94,7 +94,7 @@ router.post("/removetask", function(req, res) {
 });
 ```
 
-##CSS public/stylesheets/style.css
+## CSS public/stylesheets/style.css
 ```
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
